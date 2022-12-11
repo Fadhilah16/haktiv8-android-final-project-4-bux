@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">bux</string>
+
+    <string name="search">Search</string>
+    <string name="list">List</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="departure">Departure</string>
+    <string name="arrival">Arrival</string>
+    <string name="passengers">Passengers</string>
+    <string name="date">Date</string>
+    <string name="search_bus">Search Bus</string>
+    <string name="city">City</string>
+    <string name="your_tickets">Your Tickets</string>
+    <string name="oops">Oops!</string>
+    <string name="empty_list_text">You don’t have any ticket yet. Please order first.</string>
+    <string name="cancel">Cancel</string>
+    <string name="nearby">Nearby</string>
+    <string name="most_visited">Most Visited</string>
+    <string name="select_how_much_passenger">Select how much passanger</string>
+    <string name="select_passenger_desc">Older than 2 years old should buy a seat</string>
+    <string name="initial_value">1</string>
+    <string name="passenger">Passenger</string>
+    <string name="min_value">1</string>
+    <string name="max_value">10</string>
+    <string name="select">Select</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="best_price">Best Price</string>
+    <string name="most_booked">Most Booked</string>
+    <string name="select_date">Select Date</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
