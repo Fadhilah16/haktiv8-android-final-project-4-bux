@@ -14,22 +14,30 @@
         android:theme="@style/Theme.Bux"
         tools:targetApi="31">
         <activity
-            android:name=".activities.PickDateActivity"
+            android:name=".activities.PaymentMethodActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.SearchDestinationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.SearchDepartureActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.DetailPaymentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.PickDateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SearchDestinationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SearchDepartureActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 

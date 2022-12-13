@@ -33,7 +33,7 @@
             android:layout_gravity="center"
             android:gravity="center_horizontal"
             android:text="@string/departure_date"
-            android:textColor="@color/black"
+            android:textColor="@color/darker_grey"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -76,11 +76,12 @@
         android:id="@+id/datePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/legend"
-        android:calendarTextColor="@color/blue"
-        android:backgroundTint="@color/blue"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:calendarTextColor="@color/blue"
+        android:theme="@style/DatePicker"
         />
 
     <LinearLayout

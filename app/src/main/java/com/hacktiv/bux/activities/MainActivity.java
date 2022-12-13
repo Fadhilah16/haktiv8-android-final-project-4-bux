@@ -16,12 +16,12 @@ import com.hacktiv.bux.activities.fragments.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
+    private BottomNavigationView bottomNavigationView;
 
-    SearchFragment searchFragment = new SearchFragment();
-    ListFragment listFragment = new ListFragment();
-    NotificationFragment notificationFragment = new NotificationFragment();
-    ProfileFragment profileFragment = new ProfileFragment();
+    private SearchFragment searchFragment = new SearchFragment();
+    private ListFragment listFragment = new ListFragment();
+    private NotificationFragment notificationFragment = new NotificationFragment();
+    private ProfileFragment profileFragment = new ProfileFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

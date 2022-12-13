@@ -12,4 +12,6 @@
     <color name="darker_white">#EAEAEA</color>
     <color name="yellow">#FFD03D</color>
     <color name="red">#E94852</color>
+    <color name="grey">#585858</color>
+    <color name="darker_grey">#3D3D3D</color>
 </resources>
