@@ -14,4 +14,10 @@
     <color name="red">#E94852</color>
     <color name="grey">#585858</color>
     <color name="darker_grey">#3D3D3D</color>
+    <color name="background_bus_schdule">#F4F4F4</color>
+    <color name="text_grey_color">#808080</color>
+    <color name="text_grey2_color">#ADADAD</color>
+    <color name="dark_yellow">#8C6F12</color>
+    <color name="light_purple">#8749F2</color>
+    <color name="light_grey">#9A9A9A</color>
 </resources>
