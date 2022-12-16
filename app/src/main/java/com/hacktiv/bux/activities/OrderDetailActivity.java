@@ -5,42 +5,27 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import com.hacktiv.bux.R;
 
-public class ChooseSeats extends AppCompatActivity {
+public class OrderDetailActivity extends AppCompatActivity {
 
-    Button bookNowBtn;
     ImageView backBtn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_seats);
-        
-        bookNowBtn = findViewById(R.id.bookNowBtn);
+        setContentView(R.layout.activity_order_detail);
+
         backBtn = findViewById(R.id.backBtn);
-        
-        bookNowBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final Intent intent;
-                intent = new Intent(ChooseSeats.this, OrderActivity.class);
-                startActivity(intent);
-            }
-        });
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final Intent intent;
-                intent = new Intent(ChooseSeats.this, BusDetail.class);
+                intent = new Intent(OrderDetailActivity.this, OrderActivity.class);
                 startActivity(intent);
             }
         });
-
-
     }
 }

@@ -48,11 +48,13 @@
             android:orientation="horizontal">
 
             <RelativeLayout
+                android:id="@+id/departureLayout"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/search_layout"
                 android:layout_marginRight="20dp"
-                android:padding="12dp">
+                android:padding="12dp"
+                android:clickable="true">
 
                 <TextView
                     android:id="@+id/departure"
@@ -80,35 +82,35 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/arrivalLayout"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/search_layout"
-
-                android:padding="12dp">
+                android:padding="12dp"
+                android:clickable="true">
 
                 <TextView
                     android:id="@+id/arrival"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/arrival"
-                    android:textSize="12dp"/>
+                    android:textSize="12dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pekanbaru"
-                    android:textSize="16dp"
                     android:layout_below="@id/arrival"
-                    android:textStyle="bold"
+                    android:text="Pekanbaru"
                     android:textColor="@color/text_grey_color"
-                    />
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/down_arrow"
                     android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/down_arrow" />
             </RelativeLayout>
 
 
@@ -353,6 +355,7 @@
                 android:textSize="12dp"/>
 
             <Button
+                android:id="@+id/book_now_btn"
                 android:layout_width="85dp"
                 android:layout_height="40dp"
                 android:text="BOOK NOW"

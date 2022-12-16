@@ -336,6 +336,7 @@
             android:textStyle="bold"/>
         
         <Button
+            android:id="@+id/bookNowBtn"
             android:layout_width="125dp"
             android:layout_height="40dp"
             android:text="BOOK NOW"
