@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private ListFragment listFragment = new ListFragment();
     private NotificationFragment notificationFragment = new NotificationFragment();
     private ProfileFragment profileFragment = new ProfileFragment();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

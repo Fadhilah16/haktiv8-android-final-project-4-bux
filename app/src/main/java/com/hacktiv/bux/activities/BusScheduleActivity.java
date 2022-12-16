@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.hacktiv.bux.R;
@@ -14,6 +15,7 @@ public class BusScheduleActivity extends AppCompatActivity {
 
     Button bookNowBtn;
     RelativeLayout departureLayout, arrivalLayout;
+    ImageView backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,16 @@ public class BusScheduleActivity extends AppCompatActivity {
         bookNowBtn = findViewById(R.id.book_now_btn);
         departureLayout = (RelativeLayout) findViewById(R.id.departureLayout);
         arrivalLayout = (RelativeLayout) findViewById(R.id.arrivalLayout);
+        backBtn = findViewById(R.id.backBtn);
+
+        bookNowBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final Intent intent;
+                intent = new Intent(BusScheduleActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         bookNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override

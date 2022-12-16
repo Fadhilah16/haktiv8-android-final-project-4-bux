@@ -18,6 +18,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.hacktiv.bux.R;
+import com.hacktiv.bux.activities.BusScheduleActivity;
 import com.hacktiv.bux.activities.PickDateActivity;
 import com.hacktiv.bux.activities.SearchDepartureActivity;
 import com.hacktiv.bux.activities.SearchDestinationActivity;
@@ -75,7 +76,7 @@ public class SearchFragment extends Fragment {
     }
 
     private TextView departureCity, arrivalCity, setPassengers, pickDate, totalPassengers;
-    private Button cancelBtn, selectBtn;
+    private Button cancelBtn, selectBtn, searchBuxBtn;
     private SeekBar passengersSeekBar;
 
     @Override
@@ -87,6 +88,16 @@ public class SearchFragment extends Fragment {
         arrivalCity = view.findViewById(R.id.arrivalCity);
         setPassengers = view.findViewById(R.id.setPassengers);
         pickDate = view.findViewById(R.id.pickDate);
+        searchBuxBtn = view.findViewById(R.id.searchBusBtn);
+
+        searchBuxBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final Intent intent;
+                intent = new Intent(getContext(), BusScheduleActivity.class);
+                startActivity(intent);
+            }
+        });
 
         departureCity.setOnClickListener(new View.OnClickListener() {
             @Override
