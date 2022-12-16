@@ -26,9 +26,7 @@ public class BusDetail extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Intent intent;
-                intent = new Intent(BusDetail.this, BusScheduleActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 

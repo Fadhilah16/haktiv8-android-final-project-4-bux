@@ -1,8 +1,10 @@
 package com.hacktiv.bux.activities;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -34,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView.setSelectedItemId(R.id.navigation_search);
 
+        if(getIntent().getStringExtra("date") != null || getIntent().getStringExtra("passengers") != null){
+            Bundle bundle = new Bundle();
+            bundle.putString("date", getIntent().getStringExtra("date"));
+            bundle.putString("passengers", getIntent().getStringExtra("passengers"));
+            searchFragment.setArguments(bundle);
+        }
+
+
         getSupportFragmentManager().beginTransaction().replace(R.id.container,searchFragment).commit();
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -59,4 +69,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 }

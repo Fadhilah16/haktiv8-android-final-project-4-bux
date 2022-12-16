@@ -11,9 +11,9 @@
         android:id="@+id/illustration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/test"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
-        android:layout_centerHorizontal="true"/>
+        android:background="@drawable/login_illustration" />
 
     <TextView
         android:id="@+id/welcome"

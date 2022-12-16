@@ -10,8 +10,14 @@
         <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/drawable/search_box.xml" value="0.1745" />
         <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/drawable/thumb.xml" value="0.1745" />
         <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/drawable/total_background.xml" value="0.1745" />
+        <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_bus_detail.xml" value="0.21979166666666666" />
+        <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_bus_schedule.xml" value="0.21979166666666666" />
         <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_detail_payment.xml" value="0.176" />
+        <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_finish_registration.xml" value="0.25" />
+        <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_login.xml" value="0.20677083333333332" />
         <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_order.xml" value="0.25" />
+        <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_order_detail.xml" value="0.1" />
         <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_payment_method.xml" value="0.4" />
         <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_pick_date.xml" value="0.264" />
         <entry key="..\:/mobile apps/final-project-4-Bux/app/src/main/res/layout/activity_search_departure.xml" value="0.264" />

@@ -22,9 +22,7 @@ public class OrderDetailActivity extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Intent intent;
-                intent = new Intent(OrderDetailActivity.this, OrderActivity.class);
-                startActivity(intent);
+               onBackPressed();
             }
         });
     }

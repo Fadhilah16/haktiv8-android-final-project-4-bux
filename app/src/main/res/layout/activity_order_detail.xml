@@ -25,11 +25,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Your Ticket"
             android:layout_centerInParent="true"
+            android:text="@string/your_tickets"
             android:textColor="@color/darker_grey"
-            android:textSize="16dp"/>
+            android:textSize="16dp"
+            android:textStyle="bold" />
         
         <ImageView
             android:id="@+id/qrcode_btn"
@@ -573,7 +573,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/search_layout"
-                android:backgroundTint="@color/background_bus_schdule"
+                android:backgroundTint="@color/background_bus_schedule"
                 android:paddingHorizontal="30dp"
                 android:paddingVertical="15dp"
                 android:layout_marginTop="50dp"

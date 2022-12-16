@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.Gravity;
@@ -19,6 +20,7 @@ import android.widget.TextView;
 
 import com.hacktiv.bux.R;
 import com.hacktiv.bux.activities.BusScheduleActivity;
+import com.hacktiv.bux.activities.MainActivity;
 import com.hacktiv.bux.activities.PickDateActivity;
 import com.hacktiv.bux.activities.SearchDepartureActivity;
 import com.hacktiv.bux.activities.SearchDestinationActivity;
@@ -84,11 +86,28 @@ public class SearchFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_search, container, false);
+
         departureCity = view.findViewById(R.id.departureCity);
         arrivalCity = view.findViewById(R.id.arrivalCity);
         setPassengers = view.findViewById(R.id.setPassengers);
         pickDate = view.findViewById(R.id.pickDate);
         searchBuxBtn = view.findViewById(R.id.searchBusBtn);
+
+
+        if(getArguments() != null){
+            String date = getArguments().getString("date");
+            String passengers = getArguments().getString("passengers");
+            if(!date.isEmpty() && date != null){
+                pickDate.setText(date);
+                pickDate.setTextColor(getResources().getColor(R.color.blue));
+            }
+
+            if(!passengers.isEmpty() && passengers != null){
+                System.out.println("passengers : " + passengers);
+                setPassengers.setText(passengers);
+                setPassengers.setTextColor(getResources().getColor(R.color.blue));
+            }
+        }
 
         searchBuxBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,7 +142,10 @@ public class SearchFragment extends Fragment {
         pickDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), PickDateActivity.class));
+                Intent i = new Intent(getContext(), PickDateActivity.class);
+                i.putExtra("passengers", setPassengers.getText().toString().trim());
+
+                startActivity(i);
             }
         });
 
@@ -151,6 +173,9 @@ public class SearchFragment extends Fragment {
         selectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                setPassengers.setText(totalPassengers.getText().toString().trim());
+                setPassengers.setTextColor(getResources().getColor(R.color.blue));
                 dialog.dismiss();
             }
         });
@@ -179,4 +204,5 @@ public class SearchFragment extends Fragment {
         dialog.getWindow().setGravity(Gravity.BOTTOM);
 
     }
+
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_bus_schdule"
+    android:background="@color/background_bus_schedule"
     tools:context=".activities.BusScheduleActivity">
 
     <RelativeLayout
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:backgroundTint="@color/background_bus_schdule"
+            android:backgroundTint="@color/background_bus_schedule"
             android:src="@drawable/back_icon"
 
             />
@@ -29,7 +29,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/bux_logo"
-            android:background="@color/background_bus_schdule"
+            android:background="@color/background_bus_schedule"
             android:layout_centerInParent="true"/>
 
     </RelativeLayout>

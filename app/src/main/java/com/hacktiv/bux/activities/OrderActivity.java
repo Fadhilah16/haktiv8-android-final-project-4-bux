@@ -26,9 +26,7 @@ public class OrderActivity extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Intent intent;
-                intent = new Intent(OrderActivity.this, ChooseSeats.class);
-                startActivity(intent);
+               onBackPressed();
             }
         });
 
